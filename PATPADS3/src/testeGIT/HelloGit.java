@@ -9,7 +9,6 @@ public class HelloGit {
 
 		System.out.println("Clonado com sucesso!!!");
 
-		System.out.println("Clonado com sucesso!!!");
 
 		
 	}
