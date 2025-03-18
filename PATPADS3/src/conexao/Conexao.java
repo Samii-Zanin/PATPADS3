@@ -19,7 +19,7 @@ public class Conexao {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
             System.out.println("Erro ao conectar ao banco: " + e.getMessage());
-            System.out.println("Erro ao conectar : " + e.getMessage());
+            System.out.println("Erro ao conectar A: " + e.getMessage());
             return null;
         }
     }
