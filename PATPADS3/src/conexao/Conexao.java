@@ -11,12 +11,15 @@ public class Conexao {
     private static final String USER = "root";  // Seu usuário do MySQL
     private static final String PASSWORD = "1234567890"; // Sua senha do MySQL
 
+    
+    
     // Método para obter conexão
     public static Connection conectar() {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
             System.out.println("Erro ao conectar ao banco: " + e.getMessage());
+            System.out.println("Erro ao conectar : " + e.getMessage());
             return null;
         }
     }
@@ -44,5 +47,8 @@ public class Conexao {
 
     public static void main(String[] args) {
         inserirUsuario("João ", "Silva","12345678900", "joaosilva@gmail.com", "55999445566");
+        
+        
+        
     }
 }
